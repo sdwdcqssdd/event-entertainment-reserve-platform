@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  mail:
+    host: smtp.qq.com
+    protocol: smtp
+    default-encoding: UTF-8
+    username: 1821267392@qq.com
+    password: aojaytrxnhsjfdfb
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+            required: true
+          timeout: 10000
+          connection-timeout: 10000
+          write-timeout: 10000
+  thymeleaf:
+    mode: HTML
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://rm-cn-jeo3p0jm2000i60o.rwlb.rds.aliyuncs.com:5432/entertainment
+    username: sewebapp
+    password: A123456*
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+      idle-timeout: 60000
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    show-sql: true
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: true
+  cache:
+    type: simple

@@ -1,0 +1,99 @@
+.post-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 80px;
+    background: var(--box-background);
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+}
+
+.post-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.post-author,
+.post-time {
+    color: var(--link-color);
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.post-content {
+    margin: 20px 0;
+}
+
+.replies-title,
+.reply-form-title {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.replies-list,
+.sub-replies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reply-item,
+.sub-reply-item {
+    margin: 10px 0;
+    padding: 10px;
+    background: var(--box-background);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.reply-content,
+.sub-reply-content {
+    margin: 10px 0;
+}
+
+.reply-author,
+.sub-reply-author {
+    font-size: 0.8em;
+    color: var(--link-color);
+}
+
+.reply-buttons,
+.sub-reply-buttons {
+    margin: 10px 0;
+}
+
+.reply-buttons button,
+.sub-reply-buttons button,
+.reply-form button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    background: var(--link-color);
+    color: var(--header-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reply-buttons button:hover,
+.sub-reply-buttons button:hover,
+.reply-form button:hover {
+    background: var(--link-color-dark);
+}
+
+.reply-form,
+.sub-reply-form {
+    margin: 20px 0;
+}
+
+.reply-form textarea,
+.sub-reply-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loading,
+.error {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--link-color);
+}

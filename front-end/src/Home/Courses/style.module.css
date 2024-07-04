@@ -1,0 +1,58 @@
+.courses {
+  width: 1280px;
+  height: 100%;
+  margin: 60px auto;
+  max-width: 1280px;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+}
+.item {
+  background: #fff;
+  display: flex; /* 使用flex布局 */
+  flex-direction: row; /* 水平排列子元素 */
+  width: 100%; /* 或者你想要的宽度 */
+  margin-bottom: 45px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 15px 6px rgba(45, 63, 101, 0.2);
+}
+.img {
+  width: 50%; /* 使图片的宽度适应父容器 */
+  height: auto; /* 高度自动调整以保持宽高比 */
+  display: block;
+  object-fit: cover; /* 保证内容覆盖容器的区域，必要时进行裁剪 */
+  border-radius: 3px 0 0 3px; /* 根据需要调整圆角 */
+}
+.text {
+  flex-basis: 70%; /* 文字占据70% */
+  padding: 2%; /* 根据需要调整 */
+  text-align: left; /* 文字对齐到左边 */
+}
+.title, .desc, .line {
+  padding: 0 10px; /* 根据需要调整 */
+}
+.line {
+  border-bottom: solid 2px #282828;
+  width: 50px;
+  margin: 25px auto;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.bookButton {
+  height: 100%; /* Fill the height of its container */
+  background-color: white; /* White background */
+  border: none; /* No borders on all sides initially */
+  
+  color: black; /* Black text */
+  padding: 0 20px; /* Horizontal padding */
+  border-radius: 0; /* Remove border radius for squared corners */
+}

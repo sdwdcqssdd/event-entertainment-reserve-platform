@@ -1,0 +1,55 @@
+/* 基础变量定义 */
+:root {
+  --background-color-light: #f4f4f4;
+  --text-color-light: #333;
+  --background-color-dark: #333;
+  --text-color-dark: #f4f4f4;
+}
+
+/* 应用全局主题 */
+body[data-theme="light"] {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  font-family: 'Arial', sans-serif;
+}
+
+body[data-theme="dark"] {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+  font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.link {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.NavigationBar {
+  background-color: var(--header-background); /* 使用之前定义的主题变量 */
+}
+
+/* 确保暗色主题时的背景颜色被正确应用 */
+[data-theme="dark"] .NavigationBar {
+  background-color: var(--header-background-dark); /* 使用暗色主题的变量 */
+}
